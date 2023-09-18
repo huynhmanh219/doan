@@ -3,7 +3,7 @@
     <li class="nav-item nav-profile">
       <a href="#" class="nav-link">
         <div class="nav-profile-image">
-          <img src="assets/images/faces/face1.jpg" alt="profile">
+          <img src="<?php echo $level?>assets/images/faces/face1.jpg" alt="profile">
           <span class="login-status online"></span>
           <!--change to offline or busy as needed-->
         </div>
@@ -15,7 +15,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="index.html">
+      <a class="nav-link" href="<?php echo $level?>index.php">
         <span class="menu-title">Dashboard</span>
         <i class="mdi mdi-home menu-icon"></i>
       </a>
@@ -28,31 +28,31 @@
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/ui-features/buttons.php">Buttons</a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/ui-features/typography.php">Typography</a></li>
         </ul>
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/icons/mdi.html">
+      <a class="nav-link" href="<?php echo $level?>pages/icons/mdi.php">
         <span class="menu-title">Icons</span>
         <i class="mdi mdi-contacts menu-icon"></i>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/forms/basic_elements.html">
+      <a class="nav-link" href="<?php echo $level?>pages/forms/basic_elements.php">
         <span class="menu-title">Forms</span>
         <i class="mdi mdi-format-list-bulleted menu-icon"></i>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/charts/chartjs.html">
+      <a class="nav-link" href="<?php echo $level?>pages/charts/chartjs.php">
         <span class="menu-title">Charts</span>
         <i class="mdi mdi-chart-bar menu-icon"></i>
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/tables/basic-table.html">
+      <a class="nav-link" href="<?php echo $level?>pages/tables/basic-table.php">
         <span class="menu-title">Tables</span>
         <i class="mdi mdi-table-large menu-icon"></i>
       </a>
@@ -65,11 +65,11 @@
       </a>
       <div class="collapse" id="general-pages">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/blank-page.php"> Blank Page </a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/login.php"> Login </a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/register.php"> Register </a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/error-404.php"> 404 </a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/error-500.php"> 500 </a></li>
         </ul>
       </div>
     </li>

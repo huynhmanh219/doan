@@ -1,15 +1,16 @@
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Purple Admin</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Purple Admin</title>
+<!-- plugins:css -->
+<?php
+echo ' <link rel="stylesheet" href="'.$level.'assets/vendors/mdi/css/materialdesignicons.min.css">';
+echo '   <link rel="stylesheet" href="'.$level.'assets/vendors/css/vendor.bundle.base.css">';
+echo '    <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <!-- Layout styles -->';
+echo '<link rel="stylesheet" href="'.$level.'assets/css/style.css">';
+echo ' <!-- End layout styles -->';
+echo ' <link rel="shortcut icon" href="'.$level.'assets/images/favicon.ico" />'; ?>
