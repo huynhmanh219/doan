@@ -20,18 +20,25 @@
         <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
+   
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-        <span class="menu-title">Basic UI Elements</span>
+        <span class="menu-title">Product</span>
         <i class="menu-arrow"></i>
         <i class="mdi mdi-crosshairs-gps menu-icon"></i>
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/ui-features/buttons.php">Buttons</a></li>
-          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/ui-features/typography.php">Typography</a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/product/product.php">product</a></li>
+          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/product/listproduct.php">list product</a></li>
         </ul>
       </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?php echo $level?>pages/user/user.php">
+        <span class="menu-title">User</span>
+        <i class="mdi mdi-contacts menu-icon"></i>
+      </a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/icons/mdi.php">
@@ -52,11 +59,19 @@
       </a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="<?php echo $level?>pages/bill/bill.php">
+        <span class="menu-title">Bill</span>
+        <i class="mdi mdi-chart-bar menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/tables/basic-table.php">
         <span class="menu-title">Tables</span>
         <i class="mdi mdi-table-large menu-icon"></i>
       </a>
     </li>
+    
+    
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
         <span class="menu-title">Sample Pages</span>
