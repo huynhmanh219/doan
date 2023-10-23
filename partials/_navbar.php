@@ -25,7 +25,7 @@
             <span class="availability-status online"></span>
           </div>
           <div class="nav-profile-text">
-            <p class="mb-1 text-black">David Greymaax</p>
+            <p class="mb-1 text-black">ADMIN</p>
           </div>
         </a>
         <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
@@ -54,7 +54,7 @@
               <img src="<?php echo $level?>assets/images/faces/face4.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Duc Manh send you a message</h6>
               <p class="text-gray mb-0"> 1 Minutes ago </p>
             </div>
           </a>
@@ -64,7 +64,7 @@
               <img src="<?php echo $level?>assets/images/faces/face2.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Thanh Truc send you a message</h6>
               <p class="text-gray mb-0"> 15 Minutes ago </p>
             </div>
           </a>
@@ -74,7 +74,7 @@
               <img src="<?php echo $level?>assets/images/faces/face3.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+              <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Trung Tin picture updated</h6>
               <p class="text-gray mb-0"> 18 Minutes ago </p>
             </div>
           </a>

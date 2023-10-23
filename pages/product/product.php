@@ -3,7 +3,10 @@
   <head>
   <?php $level = '../../';
     ?>
-    <?php include($level.'link/link.php') ?>
+    <?php include($level.'link/link.php');
+          include($level.'DB/db.php');
+          include($level.'compoment/adddb_product.php');
+    ?>
   </head>
   <body>
     <div class="container-scroller">
@@ -15,7 +18,7 @@
         <?php include($level.'partials/_sidebar.php')?>
         <!-- partial -->
         <div class="main-panel">
-          <?php include($level.'content/partialtable.php')?>
+          <?php include($level.'content/partial_product.php')?>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <?php include($level.'partials/_footer.php')?>

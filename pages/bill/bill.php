@@ -4,7 +4,7 @@
   <?php $level = '../../';
     ?>
     <?php include($level.'link/link.php');
-          include($level.'DB/db2.php');
+          include($level.'DB/db.php');
           include($level.'compoment/adddb2.php')
 
     ?>
