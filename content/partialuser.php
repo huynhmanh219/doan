@@ -1,7 +1,7 @@
 
           <div class="content-wrapper">
             
-            <div class="col-lg-12 grid-margin stretch-card" style = "width: 1300px;display:flex">
+            <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
 
                 <div class="card">
                   <div class="card-body">
@@ -11,10 +11,10 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
+                          <th> Image </th>
                           <th> User </th>
                           <th> First name </th>
                           <th> Last name </th>
-                          <th> Address </th>
                           <th> Status </th>
                         </tr>
                       </thead>
@@ -24,6 +24,7 @@
                         foreach($dsuser as $user)
                         {
                           echo' <tr>
+                          <td> <img src="'.$level.$user['image'].'" alt=""></td>
                           <td class="py-1">
                             '.$user['user'].'
                           </td>
@@ -31,7 +32,7 @@
                           <td>
                           '.$user['lastname'].'
                           </td>
-                          <td> '.$user['address'].'</td>
+                          
                           <td>'.$user['status'].'</td>
                         </tr> ';
                         }

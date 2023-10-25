@@ -6,7 +6,6 @@
     <?php include($level.'link/link.php');
           include($level.'DB/db.php');
           include($level.'compoment/add_db.php')
-
     ?>
   </head>
   <body>
