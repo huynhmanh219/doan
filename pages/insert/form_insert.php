@@ -1,7 +1,7 @@
 <?php 
     $level='../../';
     include($level.'DB/db.php');
-    include($level.'compoment/adddb_product.php');
+    include($level.'compoment/add_db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
