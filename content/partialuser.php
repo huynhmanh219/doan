@@ -11,10 +11,11 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th> User </th>
+                          <th> User
+                           </th>
                           <th> First name </th>
                           <th> Last name </th>
-                          <th> Address </th>
+                          <th> Image </th>
                           <th> Status </th>
                         </tr>
                       </thead>
@@ -31,7 +32,7 @@
                           <td>
                           '.$user['lastname'].'
                           </td>
-                          <td> '.$user['address'].'</td>
+                          <td> <img src="'.$level.$user['image'].'" alt=""></td>
                           <td>'.$user['status'].'</td>
                         </tr> ';
                         }
