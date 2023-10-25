@@ -25,6 +25,7 @@
                         foreach($dsuser as $user)
                         {
                           echo' <tr>
+                          <td> <img src="'.$level.$user['image'].'" alt=""></td>
                           <td class="py-1">
                             '.$user['user'].'
                           </td>
@@ -32,7 +33,7 @@
                           <td>
                           '.$user['lastname'].'
                           </td>
-                          <td> <img src="'.$level.$user['image'].'" alt=""></td>
+                          
                           <td>'.$user['status'].'</td>
                         </tr> ';
                         }
