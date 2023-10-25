@@ -24,9 +24,10 @@
         
         <!-- main-panel ends -->
       </div> 
-      <?php include($level.'partials/_footer.php')?>
+     
       <!-- page-body-wrapper ends -->
     </div>
+     <?php include($level.'partials/_footer.php')?>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <?php include($level.'js/plugin1.php')?>

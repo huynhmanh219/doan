@@ -1,0 +1,20 @@
+
+.form-insert
+{
+    display: flex; 
+ }  
+.form-label
+{
+    width: 100px;
+    align-items: center;
+    
+}
+label{
+    
+    flex-direction: column;
+}
+#submit{
+    margin-top: 20px;
+    width: 100px;
+    height: 60px;
+}
