@@ -6,7 +6,7 @@
 <body>
     <h1>Thêm Tài Khỏan User</h1>
         <div class = "form-insert">
-            <form action="" method="post">
+            <form action="form_user_insert.php" method="POST">
              <div class = "form-label">  
                 <label for="user">
                 User:<input type="text" name ="user" id= "user">
@@ -17,8 +17,11 @@
                 <label for="lname">
                 LastName:<input type ="text" name ="lname">
                 </label> 
+                <label for="status">
+                Status:<input type ="text" name ="status">
+                </label> 
                  <label for="file">
-                Image:<input type ="file" name= "hinhanh" id ="file">
+                Image:<input type ="file" name= "image" id ="file">
                 </label> 
                 <input type="submit" VALUE = "THÊM" ID = "submit">
                  </div> 
