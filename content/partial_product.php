@@ -38,7 +38,7 @@
                                             <td> '.$sanpham['catalog_id'].'</td>
                                             <td> '.$sanpham['name'].'</td>
                                             <td> '.$sanpham['price'].'</td>
-                                            <td><img src="'.$level.$sanpham['image_link'].'" alt=""></td>
+                                            <td><img src="'.$level.'upload_img/'.$sanpham['image_link'].'" alt=""></td>
                                             <td> '.$sanpham['created'].'</td>
                                         </tr>';?>
                                 <?php   
@@ -47,6 +47,7 @@
                                 <img src="'.$level.'" alt="">
                             </tbody>
                             </table>
+                            <a href="<?php echo ($level);?>pages/insert/form_insert.php">thêm</a>
                         </div>
                     </div>
                 </div>
