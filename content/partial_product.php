@@ -25,26 +25,32 @@
                                 <th>price</th>
                                 <th>image_link</th>
                                 <th>created</th>
-
+                                <th>status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                foreach($dsproduct as $sanpham)
-                                {
-                                    echo '
-                                        <tr class="table">
-                                            <td> '.$sanpham['id'].'</td>
-                                            <td> '.$sanpham['catalog_id'].'</td>
-                                            <td> '.$sanpham['name'].'</td>
-                                            <td> '.$sanpham['price'].'</td>
-                                            <td><img src="'.$level.'upload_img/'.$sanpham['image_link'].'" alt=""></td>
-                                            <td> '.$sanpham['created'].'</td>
-                                        </tr>';?>
-                                <?php   
-                                }
-                                ?>
-                                <img src="'.$level.'" alt="">
+                                <form action="../update/update_product.php" enctype="multipart/form-data" method="POST">
+                                    <?php
+                                    
+                                    foreach($dsproduct as $sanpham)
+                                    {
+                                        echo '
+                                            <tr class="table">
+                                                
+                                                    <td> '.$sanpham['id'].'</td>
+                                                    <td> '.$sanpham['catalog_id'].'</td>
+                                                    <td> '.$sanpham['name'].'</td>
+                                                    <td> '.$sanpham['price'].'</td>
+                                                    <td><img src="'.$level.'upload_img/'.$sanpham['image_link'].'" alt=""></td>
+                                                    <td> '.$sanpham['created'].'</td>
+                                                    <td> '.$sanpham['status'].'</td>
+                                                    <td><a href="" name="btnSave" class=""><i class="mdi mdi-delete"></i></a></td>
+                                            
+                                            </tr>';?>
+                                    <?php   
+                                    }
+                                    ?>
+                                </form>
                             </tbody>
                             </table>
                             <a href="<?php echo ($level);?>pages/insert/form_insert.php">thêm</a>
