@@ -1,6 +1,6 @@
 
           <div class="content-wrapper">
-            
+            <a href="<?php echo $level?>pages/form/form.php">Add User</a>
             <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
 
                 <div class="card">
@@ -24,7 +24,7 @@
                         foreach($dsuser as $user)
                         {
                           echo' <tr>
-                          <td> <img src="'.$level.$user['image'].'" alt=""></td>
+                          <td> <img src="'.$level."img-user/".$user['image'].'" alt=""></td>
                           <td class="py-1">
                             '.$user['user'].'
                           </td>
