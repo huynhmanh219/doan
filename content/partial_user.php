@@ -1,33 +1,32 @@
-  <div class="col-lg-12 grid-margin stretch-card">
+
+          <div class="content-wrapper">
+            <a href="<?php echo $level?>pages/form/form.php">Add User</a>
+            <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
+
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Bill</h4>
-                    <p class="card-description"> Add class <code>.table-bordered</code>
+                    <h4 class="card-title">User</h4>
+                    <p class="card-description">  Add class <code>.table-striped</code>
                     </p>
-                    <table class="table table-bordered">
+                    <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th> Bill </th>
-                          <th> Date </th>
-                          <th> Paidment Method </th>
-                          <th> Price </th>
+                          <th> Image </th>
+                          <th> User </th>
+                          <th> First name </th>
+                          <th> Last name </th>
                           <th> Status </th>
                         </tr>
                       </thead>
+                      
                       <tbody>
-                       <?php 
-                       foreach($dsbill as $bill)
-                       {
-                       echo '<tr>
-                          <td>'.$bill['mahd'].'</td>
-                          <td>'.$bill['ngay'].'</td>
-                          <td>'.$bill['pttt'].'</td>
-                          <td>'.$bill['gia'].'</td>
-                          <td>'.$bill['status'].'</td>
-                        </tr>';
-                      }
-                       /* <tr>
-                          <td> 2 </td>
+                        <?php
+                          include($level.'Data/user_data.php');
+                        /*
+                        <tr>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
+                          </td>
                           <td> Messsy Adam </td>
                           <td>
                             <div class="progress">
@@ -38,7 +37,9 @@
                           <td> July 1, 2015 </td>
                         </tr>
                         <tr>
-                          <td> 3 </td>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
+                          </td>
                           <td> John Richards </td>
                           <td>
                             <div class="progress">
@@ -49,7 +50,9 @@
                           <td> Apr 12, 2015 </td>
                         </tr>
                         <tr>
-                          <td> 4 </td>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-4.png" alt="image" />
+                          </td>
                           <td> Peter Meggik </td>
                           <td>
                             <div class="progress">
@@ -60,7 +63,9 @@
                           <td> May 15, 2015 </td>
                         </tr>
                         <tr>
-                          <td> 5 </td>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-1.png" alt="image" />
+                          </td>
                           <td> Edward </td>
                           <td>
                             <div class="progress">
@@ -71,7 +76,9 @@
                           <td> May 03, 2015 </td>
                         </tr>
                         <tr>
-                          <td> 6 </td>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
+                          </td>
                           <td> John Doe </td>
                           <td>
                             <div class="progress">
@@ -82,7 +89,9 @@
                           <td> April 05, 2015 </td>
                         </tr>
                         <tr>
-                          <td> 7 </td>
+                          <td class="py-1">
+                            <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
+                          </td>
                           <td> Henry Tom </td>
                           <td>
                             <div class="progress">
@@ -98,3 +107,6 @@
                   </div>
                 </div>
               </div>
+            
+          <!-- partial -->
+        </div>

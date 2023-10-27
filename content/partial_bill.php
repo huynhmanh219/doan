@@ -1,46 +1,24 @@
-
-          <div class="content-wrapper">
-            <a href="<?php echo $level?>pages/form/form.php">Add User</a>
-            <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
-
+  <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">User</h4>
-                    <p class="card-description">  Add class <code>.table-striped</code>
+                    <h4 class="card-title">Bill</h4>
+                    <p class="card-description"> Add class <code>.table-bordered</code>
                     </p>
-                    <table class="table table-striped">
+                    <table class="table table-bordered">
                       <thead>
                         <tr>
-                          <th> Image </th>
-                          <th> User </th>
-                          <th> First name </th>
-                          <th> Last name </th>
+                          <th> Bill </th>
+                          <th> Date </th>
+                          <th> Paidment Method </th>
+                          <th> Price </th>
                           <th> Status </th>
                         </tr>
                       </thead>
-                      
                       <tbody>
-                        <?php
-                        foreach($dsuser as $user)
-                        {
-                          echo' <tr>
-                          <td> <img src="'.$level."img-user/".$user['image'].'" alt=""></td>
-                          <td class="py-1">
-                            '.$user['user'].'
-                          </td>
-                          <td>'.$user['firstname'].' </td>
-                          <td>
-                          '.$user['lastname'].'
-                          </td>
-                          
-                          <td>'.$user['status'].'</td>
-                        </tr> ';
-                        }
-                        /*
-                        <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
-                          </td>
+                       <?php 
+                        include($level.'data/bill_data.php');
+                       /* <tr>
+                          <td> 2 </td>
                           <td> Messsy Adam </td>
                           <td>
                             <div class="progress">
@@ -51,9 +29,7 @@
                           <td> July 1, 2015 </td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
-                          </td>
+                          <td> 3 </td>
                           <td> John Richards </td>
                           <td>
                             <div class="progress">
@@ -64,9 +40,7 @@
                           <td> Apr 12, 2015 </td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-4.png" alt="image" />
-                          </td>
+                          <td> 4 </td>
                           <td> Peter Meggik </td>
                           <td>
                             <div class="progress">
@@ -77,9 +51,7 @@
                           <td> May 15, 2015 </td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-1.png" alt="image" />
-                          </td>
+                          <td> 5 </td>
                           <td> Edward </td>
                           <td>
                             <div class="progress">
@@ -90,9 +62,7 @@
                           <td> May 03, 2015 </td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-2.png" alt="image" />
-                          </td>
+                          <td> 6 </td>
                           <td> John Doe </td>
                           <td>
                             <div class="progress">
@@ -103,9 +73,7 @@
                           <td> April 05, 2015 </td>
                         </tr>
                         <tr>
-                          <td class="py-1">
-                            <img src="../../assets/images/faces-clipart/pic-3.png" alt="image" />
-                          </td>
+                          <td> 7 </td>
                           <td> Henry Tom </td>
                           <td>
                             <div class="progress">
@@ -121,6 +89,3 @@
                   </div>
                 </div>
               </div>
-            
-          <!-- partial -->
-        </div>

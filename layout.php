@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <?php
     $pick = '';
-    include($level . 'link/link.php')
+    include($level . 'metadata/link.php');
         ?>
 </head>
 
@@ -23,7 +23,7 @@
                 <!-- partial:partials/_sidebar.html -->
                 <?php include($level . 'partials/_sidebar.php') ?>
                 <!-- partial -->
-                <?php include($level . 'content/partial.php') ?>
+                <?php include($level . 'content/partial_index.php') ?>
                 <!-- partial -->
             </div>
             <!-- main-panel ends -->
@@ -60,7 +60,7 @@
                 <?php include($level . 'partials/_sidebar.php') ?>
                 <!-- partial -->
                 <div class="main-panel">
-                    <?php include($level . 'content/partialchar.php') ?>
+                    <?php include($level . 'content/partial_char.php') ?>
                     <!-- partial:../../partials/_footer.php -->
                     <?php include($level . 'partials/_footer.php') ?>
                     <!-- partial -->
@@ -99,7 +99,7 @@
                 <?php include($level . 'partials/_sidebar.php') ?>
                 <!-- partial -->
                 <div class="main-panel">
-                    <?php include($level . 'content/partialform.php') ?>
+                    <?php include($level . 'content/partial_form.php') ?>
                     <!-- main-panel ends -->
                 </div>
                 <!-- page-body-wrapper ends -->
@@ -132,7 +132,7 @@
                     <?php include($level . 'partials/_sidebar.php') ?>
                     <!-- partial -->
                     <div class="main-panel">
-                        <?php include($level . 'content/partialmdi.php') ?>
+                        <?php include($level . 'content/partial_mdi.php') ?>
                         <!-- partial:../../partials/_footer.php -->
                         <?php include($level . 'partials/_footer.php') ?>
                         <!-- partial -->
@@ -195,7 +195,7 @@
     <?php if($page == '404')
     {?>
     <div class="container-scroller">
-      <?php include($level.'content/partial404.php')?>
+      <?php include($level.'content/partial_404.php')?>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
@@ -215,7 +215,7 @@
     <?php if($page == '500')
     {?>
     <div class="container-scroller">
-    <?php include($level.'content/partial500.php')?>
+    <?php include($level.'content/partial_500.php')?>
      <!-- page-body-wrapper ends -->
       </div>
       <!-- container-scroller -->
@@ -235,7 +235,7 @@
     <?php if($page == 'login')
     {?>
        <div class="container-scroller">
-     <?php include($level.'content/partiallogin.php')?>
+     <?php include($level.'content/partial_login.php')?>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
@@ -255,7 +255,7 @@
     <?php if($page == 'register')
     {?>
     <div class="container-scroller">
-     <?php include($level.'content/partialregister.php')?>
+     <?php include($level.'content/partial_register.php')?>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->

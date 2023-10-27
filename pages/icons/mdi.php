@@ -4,7 +4,7 @@
   <?php $level = '../../';
         $page = 'mdi';
   ?>
-  <?php include($level.'link/link.php');
+  <?php include($level.'metadata/link.php');
         include($level.'layout.php')
   ?>
   </head>

@@ -19,24 +19,13 @@
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                <th> catalog_id </th>
-                                <th> catalog_name </th>
-                                
+                                    <th> Catalog_id </th>
+                                    <th> Catalog_name </th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                foreach($dslistproduct as $list)
-                                {
-                                    echo '
-                                        <tr class="table">
-                                            <td> '.$list['catalog_id'].' </td>
-                                            <td> '.$list['catalog_name'].' </td>
-                                        </tr>';?>
-                                <?php   
-                                }
-                                ?>
-                                
+                                <?php include($level.'Data/listProduct_data.php')?>
                             </tbody>
                             </table>
                         </div>

@@ -3,7 +3,7 @@
   <head>
   <?php $level = '../../';
     ?>
-    <?php include($level.'link/link.php');
+    <?php include($level.'metadata/link.php');
           include($level.'DB/db.php');
           include($level.'compoment/add_db.php');
     ?>

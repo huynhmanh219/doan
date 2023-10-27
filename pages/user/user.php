@@ -3,7 +3,7 @@
   <head>
     <?php $level = '../../';
     ?>
-    <?php include($level.'link/link.php');
+    <?php include($level.'metadata/link.php');
           include($level.'DB/db.php');
           include($level.'compoment/add_db.php')
     ?>
@@ -19,7 +19,7 @@
         <!-- partial:../../partials/_sidebar.html -->
         <?php include($level.'partials/_sidebar.php')?>
         <!-- partial --><div class="main-panel">
-        <?php include($level.'content/partialuser.php')?>
+        <?php include($level.'content/partial_user.php')?>
           <!-- partial:../../partials/_footer.html -->
         
         <!-- main-panel ends -->

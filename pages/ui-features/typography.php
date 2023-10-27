@@ -3,7 +3,7 @@
   <head>
   <?php $level = '../../';
     ?>
-    <?php include($level.'link/link.php') ?>
+    <?php include($level.'metadata/link.php') ?>
   </head>
   <body>
     <div class="container-scroller">
