@@ -4,6 +4,10 @@ $result = $db->prepare($sql);
 $result->execute();
 $dsuser= $result->fetchAll();
 // var_dump($dsuser);
+$sql = "select* from product";
+$result = $db->prepare($sql);
+$result->execute();
+$dsproduct= $result->fetchAll();
 
 $sql = "select* from bill";
 $result = $db->prepare($sql);
@@ -14,9 +18,4 @@ $sql = "select* from catalog";
 $result = $db->prepare($sql);
 $result->execute();
 $dslistproduct= $result->fetchAll();
-
-$sql = "select* from product";
-$result = $db->prepare($sql);
-$result->execute();
-$dsproduct= $result->fetchAll();
 ?>

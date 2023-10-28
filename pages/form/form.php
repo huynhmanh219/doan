@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h1>Thêm Tài Khỏan User</h1>
+    <h1>Add Account User</h1>
         <div class = "form-insert">
             <form action="form_user_insert.php" method="POST">
              <div class = "form-label">  
