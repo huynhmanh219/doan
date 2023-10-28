@@ -1,12 +1,18 @@
 <?php
 $level = "../../";
 var_dump($_POST);
+$path = $_FILES['image']['name'];
+$folder = "../img-user/";
+$filepath = $folder.$path;
+move_uploaded_file($_FILES['image']['tmp_name'],$filepath);
+var_dump($filepath);
+
 include $level."DB/db.php";
 $user = $_POST['user'];
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $sta = $_POST['status'];
-$img = $_FILES['picture']['name'];
+$img = $_FILES['image']['name'];
 
 $SQL_str_themuser= 
 "Insert into user(users,firstname,lastname,statu,picture)

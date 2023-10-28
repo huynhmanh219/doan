@@ -6,7 +6,7 @@
 <body>
     <h1>Add Account User</h1>
         <div class = "form-insert">
-            <form action="form_user_insert.php" method="POST">
+            <form action="form_user_insert.php" method="POST" enctype="multipart/form-data">
              <div class = "form-label">  
                 <label for="user">
                 User:<input type="text" name ="user" id= "user">
