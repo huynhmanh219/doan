@@ -17,7 +17,7 @@
                 <!-- partial:../../partials/_sidebar.html -->
                 <?php include($level.'partials/_sidebar.php')?>
                 <div class="main-panel">
-                    <?php include($level.'content/partial_form_insert.php')?>
+                    <?php include($level.'content/partial_insert_product.php')?>
                     <?php include($level.'partials/_footer.php')?>  
                 </div>
             </div>
