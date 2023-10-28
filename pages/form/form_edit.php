@@ -19,13 +19,6 @@ else{
 
 
 
-/*
-$update_sql = "UPDATE user SET users = $up_user;
-firstname = $up_fnamer;
-lastname =$up_lname;
-statu = $up_status;
-picture = $img
- where users = $suser";*/
 
 $update_sql = "UPDATE user SET firstname = :fname,
 lastname =:lname,
@@ -36,7 +29,6 @@ picture = :pic
 
 $result = $db->prepare($update_sql);
 
-#$result -> bindValue(':users',$up_user,PDO::PARAM_STR);
 $result -> bindValue(':fname',$up_fname,PDO::PARAM_STR);
 $result -> bindValue(':lname',$up_lname,PDO::PARAM_STR);
 $result -> bindValue(':statu',$up_status,PDO::PARAM_INT);
