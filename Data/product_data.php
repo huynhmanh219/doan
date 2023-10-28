@@ -14,7 +14,7 @@
       }
         echo '
             <tr class="table">
-              
+              <td><input type="checkbox"></td>
               <td> '.$sanpham['id'].'</td>
               <td> '.$sanpham['catalog_id'].'</td>
               <td> '.$sanpham['name'].'</td>

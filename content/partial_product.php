@@ -14,20 +14,20 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Product</h4>
-                            <p class="card-description"> Database</code>
-                            </p>
-
+                            <p class="card-description"> Database</code></p>
+                            
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                <th> id </th>
-                                <th> catalog_id </th>
-                                <th>name</th>
-                                <th>price</th>
-                                <th>image_link</th>
-                                <th>created</th>
-                                <th>status</th>
-                                <th>function</th>
+                                  <th><input type="checkbox"></th>
+                                  <th> id </th>
+                                  <th> catalog_id </th>
+                                  <th>name</th>
+                                  <th>price</th>
+                                  <th>image_link</th>
+                                  <th>created</th>
+                                  <th>status</th>
+                                  <th>function</th>
                                 </tr>
                             </thead>
                             <tbody>
