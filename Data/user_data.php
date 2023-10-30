@@ -8,9 +8,9 @@
           $user['statu']  = 'Active';
           $color= 'text-success';
         }
-        if($user['statu']=='update')
+        if($user['statu']=='0')
         {
-          $user['statu'] = '0';
+          $user['statu'] = 'disable';
           $color = 'text-danger';
         }
         echo' 

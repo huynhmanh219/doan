@@ -6,7 +6,7 @@
     <?php include($level.'metadata/link.php');
           include($level.'DB/db.php');
           include($level.'compoment/add_db.php');
-          include('../update/update_product.php');
+          
     ?>
   </head>
   <body>

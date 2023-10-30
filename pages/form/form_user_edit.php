@@ -20,7 +20,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
     <h1> User Update</h1>
         <div class = "form-insert">
             <form action="form_edit.php" method="POST" enctype="multipart/form-data">
-                <input type="hidden" name  = "suser" value ="suser" ?>
+                <input type="hidden" name  = "suser" value ="suser" >
              <div class = "form-label">  
                 <label for="user">
                 User:<input type="text" name ="user" id= "user"  value = "<?php echo( $row['users'])?>">

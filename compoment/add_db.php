@@ -14,7 +14,7 @@ $result = $db->prepare($sql);
 $result->execute();
 $dsbill= $result->fetchAll();
 
-$sql = "select* from catalog";
+$sql = "select* from catagory";
 $result = $db->prepare($sql);
 $result->execute();
 $dslistproduct= $result->fetchAll();

@@ -36,7 +36,8 @@ $result -> bindValue(':pic',$img,PDO::PARAM_STR);
 
 
 var_dump($_FILES);
-move_uploaded_file($_FILES["image"]["tmp_name"],$level."img-user/".$_FILES["image"]["name"]);
+move_uploaded_file($_FILES["image"]["tmp_name"],
+$level."img-user/".$_FILES["image"]["name"]);
 
 $result -> execute();
 

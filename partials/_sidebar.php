@@ -46,12 +46,12 @@
         <i class="mdi mdi-contacts menu-icon"></i>
       </a>
     </li>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/forms/basic_elements.php">
         <span class="menu-title">Forms</span>
         <i class="mdi mdi-format-list-bulleted menu-icon"></i>
       </a>
-    </li>
+    </li> -->
     <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/charts/chartjs.php">
         <span class="menu-title">Charts</span>

@@ -19,9 +19,11 @@
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
+                                    <th><input type="checkbox"></th>
                                     <th> Catalog_id </th>
                                     <th> Catalog_name </th>
                                     <th>Status</th>
+                                    <th>Function</th>
                                 </tr>
                             </thead>
                             <tbody>
