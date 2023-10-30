@@ -1,5 +1,9 @@
 
           <div class="content-wrapper">
+          <form action="../form/form_search_user_process.php" method="get">
+            <input type="text" name = "search">
+            <input type = "submit" name = "submit" value = "search">
+         </form>
             <a href="<?php echo $level?>pages/form/form_user_add.php">Add User</a>
             <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
 

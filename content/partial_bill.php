@@ -1,4 +1,8 @@
-  <div class="col-lg-12 grid-margin stretch-card">
+  <form action="../form/form_search_bill_process.php" method="get">
+            <input type="text" name = "search">
+            <input type = "submit" name = "submit" value = "search">
+         </form><div class="col-lg-12 grid-margin stretch-card">
+  
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Bill</h4>
