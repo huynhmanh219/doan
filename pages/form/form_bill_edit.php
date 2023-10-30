@@ -25,7 +25,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
                 Bill:<input type="text" name ="bill" id= "bill" value = "<?php echo($row['mahd'])?>">
                 </label>
                 <label for="fname">  
-                Date: <input type ="text" name ="date" id ="fname" value ="<?php echo($row['ngay'])?>">
+                Date: <input type ="date" name ="date" id ="fname" value ="<?php echo($row['ngay'])?>">
                 </label>  
                 <label for="lname">
                 Paid Method:<input type ="text" name ="pttt" value ="<?php echo( $row['pttt'])?>">

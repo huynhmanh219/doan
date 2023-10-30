@@ -1,9 +1,8 @@
 <?php
 $level = "../../";
-var_dump($_POST);
 $path = $_FILES['image']['name'];
-$folder = "../img-user/";
-$filepath = $folder.$path;
+$folder = "../../img-user/";
+$filepath = $folder. 
 move_uploaded_file($_FILES['image']['tmp_name'],$filepath);
 var_dump($filepath);
 

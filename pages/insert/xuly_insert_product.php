@@ -17,7 +17,7 @@
     $status = $_REQUEST['status'];
     // var_dump($id);
 
-    $sql_into="insert into product(id,catalog_id,name,price,image_link,created,status)
+    $sql_into="insert into product(id,catalog_id,names,price,image_link,created,statu)
                 values(:id, :catalog_id, :name, :price, :image_link, :created, :status)";
     $result=$db->prepare($sql_into);
 

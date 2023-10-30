@@ -7,7 +7,7 @@
     $status = $_REQUEST['status'];
     // var_dump($id);
 
-    $sql_list="insert into catalog(catalog_id,catalog_name,status)
+    $sql_list="insert into catagory(catalog_id,catalog_name,statu)
                 values(:catalog_id, :catalog_name, :status)";
     $result=$db->prepare($sql_list);
 

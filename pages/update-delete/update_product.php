@@ -4,7 +4,7 @@
     $status = '0';
     $id=$_GET['sid'];
 
-    $sql_update = "UPDATE product SET status = '0' where id='$id'";
+    $sql_update = "UPDATE product SET statu = '0' where id='$id'";
     $result = $db->prepare($sql_update);
      $result->execute();
 
