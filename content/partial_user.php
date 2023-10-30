@@ -16,7 +16,7 @@
                           <th> First name </th>
                           <th> Last name </th>
                           <th> Status </th>
-                          <th> Operation </th>
+                          <th style ="text-align: center"> Operation </th>
                         </tr>
                       </thead>
                       

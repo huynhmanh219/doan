@@ -20,7 +20,7 @@
             <td> '.$user['firstname'].' </td>
             <td> '.$user['lastname'].' </td>
             <td ><p class="'.$color.'"> '.$user['statu']. '</p></td>
-            <td><a " href="../form/form_user_edit.php?suser='.$user['users'].'" class = "btn btn-primary ">Sửa</a>
+            <td style ="text-align: center"><a " href="../form/form_user_edit.php?suser='.$user['users'].'" class = "btn btn-primary ">Sửa</a>
             <a  href="../form/form_user_delete.php?suser='.$user['users'].'"class = "btn btn-danger">Xóa</a>   </td>
         </tr> ';
     }
