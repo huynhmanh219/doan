@@ -1,6 +1,6 @@
 
           <div class="content-wrapper">
-            <a href="<?php echo $level?>pages/form/form.php">Add User</a>
+            <a href="<?php echo $level?>pages/form/form_user_add.php">Add User</a>
             <div class="col-lg-12 grid-margin stretch-card" style = "width: 1000px">
 
                 <div class="card">
@@ -16,7 +16,7 @@
                           <th> First name </th>
                           <th> Last name </th>
                           <th> Status </th>
-                          <th> Operation </th>
+                          <th style ="text-align: center"> Operation </th>
                         </tr>
                       </thead>
                       

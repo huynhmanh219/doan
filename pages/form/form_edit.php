@@ -7,7 +7,7 @@ $up_fname = $_POST['fname'];
 $up_lname = $_POST['lname'];
 $up_status = $_POST['status'];
 
-$suser = $_POST['suser'];
+
 
 if($_FILES['image']['name'] == "")
 {
