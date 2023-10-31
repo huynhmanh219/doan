@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 27, 2023 lúc 07:39 PM
+-- Thời gian đã tạo: Th10 31, 2023 lúc 05:28 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -24,21 +24,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `catalog`
+-- Cấu trúc bảng cho bảng `catagory`
 --
 
-CREATE TABLE `catalog` (
+CREATE TABLE `catagory` (
   `catalog_id` varchar(7) NOT NULL,
   `catalog_name` varchar(50) DEFAULT NULL,
-  `status` int(1) DEFAULT NULL
+  `statu` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `catalog`
+-- Đang đổ dữ liệu cho bảng `catagory`
 --
 
-INSERT INTO `catalog` (`catalog_id`, `catalog_name`, `status`) VALUES
-('ML01', 'Nước Hoa', 1),
+INSERT INTO `catagory` (`catalog_id`, `catalog_name`, `statu`) VALUES
+('ML01', 'Nước Hoa', 0),
 ('ML02', 'mỹ phẩm', 1),
 ('ML03', 'Chăm sóc toàn thân', 1),
 ('ML04', 'chăm sóc miệng', 1);
@@ -48,9 +48,9 @@ INSERT INTO `catalog` (`catalog_id`, `catalog_name`, `status`) VALUES
 --
 
 --
--- Chỉ mục cho bảng `catalog`
+-- Chỉ mục cho bảng `catagory`
 --
-ALTER TABLE `catalog`
+ALTER TABLE `catagory`
   ADD PRIMARY KEY (`catalog_id`);
 COMMIT;
 

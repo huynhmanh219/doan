@@ -1,8 +1,8 @@
 <?php
-$level = "../../";
+$level = "../";
 $path = $_FILES['image']['name'];
-$folder = "../../img-user/";
-$filepath = $folder. 
+$folder = $level."img-user/";
+$filepath = $folder. $path;
 move_uploaded_file($_FILES['image']['tmp_name'],$filepath);
 var_dump($filepath);
 
@@ -24,7 +24,8 @@ $result -> bindValue (':statu',$sta,PDO::PARAM_STR);
 $result -> bindValue (':picture',$img,PDO::PARAM_STR);
 
 var_dump($_FILES);
-move_uploaded_file($_FILES["picture"]["tmp_name"],$level."img-user/" .$_FILES["picture"]["name"]);
+move_uploaded_file($_FILES["picture"]["tmp_name"],
+$level."img-user/" .$_FILES["picture"]["name"]);
 $result -> execute();
 
 header('location:'.$level.'"../../pages/user/user.php');

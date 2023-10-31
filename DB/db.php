@@ -6,7 +6,7 @@
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
    );
    try{
-    $db = new PDO($conn, 'root',$pass,$option);
+    $db = new PDO($conn, 'root',$pass,$_option);
    }
    catch (PDOexeption $e)
    {

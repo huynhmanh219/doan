@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php 
-    $page = 'index';
+    $pages = 'index';
     $level = '';?>
 
    <?php

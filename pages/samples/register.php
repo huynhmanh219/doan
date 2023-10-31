@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <?php $level = "../../";
-  $page= 'register';
+  $pages= 'register';
   include($level.'layout.php')?>
   </head>
   <body>

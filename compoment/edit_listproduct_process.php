@@ -1,5 +1,5 @@
 <?php
-    $level='../../';
+    $level='../';
     include($level.'DB/db.php');
    
     $edit_catalogID = $_REQUEST['catagoryID'];
@@ -22,5 +22,5 @@
 
     $rst -> execute();
 
-    header('location:../product/listproduct.php');
+    header('location:../pages/product/listproduct.php');
 ?>

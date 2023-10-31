@@ -1,5 +1,5 @@
 <?php
-    $level='../../';
+    $level='../';
     include($level."DB/db.php");
 
     $catalog_id=$_REQUEST['catalog_id'];

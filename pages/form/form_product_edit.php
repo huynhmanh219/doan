@@ -5,7 +5,7 @@
         $level='../../';
             include($level.'metadata/link.php');
             include($level.'DB/db.php');
-            include($level.'compoment/add_db.php');
+            include($level.'compoment/product_data.php');
         ?>
     </head>
     <body>
@@ -17,7 +17,7 @@
                 <!-- partial:../../partials/_sidebar.html -->
                 <?php include($level.'partials/_sidebar.php')?>
                 <div class="main-panel">
-                    <?php include($level.'content/partial_insert_product.php')?>
+                    <?php include($level.'content/partial_edit_product.php')?>
                     <?php include($level.'partials/_footer.php')?>  
                 </div>
             </div>

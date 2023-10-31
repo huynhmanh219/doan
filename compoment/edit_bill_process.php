@@ -1,5 +1,5 @@
 <?php
-$level = "../../";
+$level = "../";
 
 include $level."DB/db.php";
 $mahd = $_POST['bill'];
@@ -25,6 +25,6 @@ $result -> bindValue(':statu',$status,PDO::PARAM_STR);
 
 $result -> execute();
 
-header("location:../bill/bill.php");
+header("location:../pages/bill/bill.php");
 
 ?>

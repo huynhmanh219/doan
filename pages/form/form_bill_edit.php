@@ -18,7 +18,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
 <body>
     <h1> User Update</h1>
         <div class = "form-insert">
-            <form action="form_bill_edit_process.php" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo($level);?>compoment/edit_bill_process.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name  = "smahd" value ="smahd" ?>
              <div class = "form-label">  
                 <label for="bill">

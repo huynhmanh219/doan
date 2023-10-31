@@ -16,7 +16,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Add Product</h4>
                                 <p class="card-description"> Database</code></p>
-                                <form action="xuly_insert_product.php" method="POST" enctype="multipart/form-data"> 
+                                <form action="<?php echo($level);?>compoment/insert_product_process.php" method="POST" enctype="multipart/form-data"> 
                                     <table>
                                         <tr class="rowTable">
                                             <td class="tdLabel"><label class="label">Id:</label></td>

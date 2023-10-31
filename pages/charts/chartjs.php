@@ -3,7 +3,7 @@
 
 <head>
   <?php
-   $page = 'chartjs';
+   $pages = 'chartjs';
    $level = '../../';
   ?>
 

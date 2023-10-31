@@ -1,7 +1,11 @@
 <?php
-$level = "../../";
+$level = "../";
 var_dump($_POST);
 include($level.'DB/db.php');
+
+
+
+
 $up_user = $_POST['user'];
 $up_fname = $_POST['fname'];
 $up_lname = $_POST['lname'];
@@ -41,7 +45,7 @@ $level."img-user/".$_FILES["image"]["name"]);
 
 $result -> execute();
 
-header('location:../user/user.php');
+header('location:../pages/user/user.php');
 
 
 

@@ -11,7 +11,7 @@
 
 <body>
     <!-- index-->
-    <?php if ($page == 'index') 
+    <?php if ($pages == 'index') 
     { ?>
         <!-- banner-->
         <div class="container-scroller">
@@ -48,7 +48,7 @@
     ?>
     
     <!-- chartjs-->
-    <?php if ($page == 'chartjs') 
+    <?php if ($pages == 'chartjs') 
     {
         ?>
         <div class="container-scroller">
@@ -88,7 +88,7 @@
     ?>
     
     <!--basic-->
-    <?php if ($page == 'basic') 
+    <?php if ($pages == 'basic') 
     { ?>
         <div class="container-scroller">
             <!-- partial:../../partials/_navbar.php -->
@@ -120,7 +120,7 @@
     } ?>
     
     <!--mdi-->
-    <?php if ($page == 'mdi') 
+    <?php if ($pages == 'mdi') 
     {
             ?>
             <div class=" container-scroller">
@@ -154,7 +154,7 @@
     ?>
     
     <!--blank-->
-    <?php if ($page == 'blank') {
+    <?php if ($pages == 'blank') {
             ?>
             <div class="container-scroller">
                 <!-- partial:../../partials/_navbar.html -->
@@ -192,7 +192,7 @@
     ?>
 
     <!--error 404 -->
-    <?php if($page == '404')
+    <?php if($pages == '404')
     {?>
     <div class="container-scroller">
       <?php include($level.'content/partial_404.php')?>
@@ -212,7 +212,7 @@
     ?>
 
     <!-- error 500 -->
-    <?php if($page == '500')
+    <?php if($pages == '500')
     {?>
     <div class="container-scroller">
     <?php include($level.'content/partial_500.php')?>
@@ -232,7 +232,7 @@
     ?>
 
     <!--login-->
-    <?php if($page == 'login')
+    <?php if($pages == 'login')
     {?>
        <div class="container-scroller">
      <?php include($level.'content/partial_login.php')?>
@@ -252,7 +252,7 @@
     ?>
 
     <!--register-->
-    <?php if($page == 'register')
+    <?php if($pages == 'register')
     {?>
     <div class="container-scroller">
      <?php include($level.'content/partial_register.php')?>
@@ -271,6 +271,151 @@
     }
     ?>
 
+    <!-- Listproduct -->
+    <?php if($pages == 'listproduct')
+    {?>
+        <body>
+            <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <?php include($level.'partials/_navbar.php')?>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:../../partials/_sidebar.html -->
+                <?php include($level.'partials/_sidebar.php')?>
+                <!-- partial -->
+                <div class="main-panel">
+                <?php include($level.'content/partial_listproduct.php')?>
+                <!-- content-wrapper ends -->
+                <!-- partial:../../partials/_footer.html -->
+                <?php include($level.'partials/_footer.php')?>
+                <!-- partial -->
+                </div>
+            </div>
+            </div>
+            <?php include($level.'js/plugin1.php')?>
+            <!-- endinject -->
+            <!-- Plugin js for this page -->
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+            <?php include($level.'js/impact.php')?>
+            <!-- endinject -->
+        </body>
+    <?php
+    }
+    ?>
+    <!-- product -->
+    <?php if($pages == 'product')
+    {?>
+        <body>
+            <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <?php include($level.'partials/_navbar.php')?>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                
+                <!-- partial:../../partials/_sidebar.html -->
+                <?php include($level.'partials/_sidebar.php')?>
+                <!-- partial --><div class="main-panel">
+                <?php include($level.'content/partial_product.php')?>
+                <!-- partial:../../partials/_footer.html -->
+                
+                <!-- main-panel ends -->
+            </div> 
+            
+            <!-- page-body-wrapper ends -->
+            </div>
+            <?php include($level.'partials/_footer.php')?>
+            <!-- container-scroller -->
+            <!-- plugins:js -->
+            <?php include($level.'js/plugin1.php')?>
+            <!-- endinject -->
+            <!-- Plugin js for this page -->
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+            <?php include($level.'js/impact.php')?>
+            <!-- endinject -->
+            <!-- Custom js for this page -->
+            <!-- End custom js for this page -->
+        </body>
+    <?php
+    }
+    ?>
+
+    <!-- user -->
+    <?php if($pages == 'user')
+    {?>
+        <body>
+            <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <?php include($level.'partials/_navbar.php')?>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                
+                <!-- partial:../../partials/_sidebar.html -->
+                <?php include($level.'partials/_sidebar.php')?>
+                <!-- partial --><div class="main-panel">
+                <?php include($level.'content/partial_user.php')?>
+                <!-- partial:../../partials/_footer.html -->
+                
+                <!-- main-panel ends -->
+            </div> 
+            
+            <!-- page-body-wrapper ends -->
+            </div>
+            <?php include($level.'partials/_footer.php')?>
+            <!-- container-scroller -->
+            <!-- plugins:js -->
+            <?php include($level.'js/plugin1.php')?>
+            <!-- endinject -->
+            <!-- Plugin js for this page -->
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+            <?php include($level.'js/impact.php')?>
+            <!-- endinject -->
+            <!-- Custom js for this page -->
+            <!-- End custom js for this page -->
+        </body>
+    <?php
+    }
+    ?>
+
+    <!-- Bill -->
+    <?php if($pages == 'bill')
+    {?>
+        <body>
+            <div class="container-scroller">
+            <!-- partial:../../partials/_navbar.html -->
+            <?php include($level.'partials/_navbar.php')?>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                
+                <!-- partial:../../partials/_sidebar.html -->
+                <?php include($level.'partials/_sidebar.php')?>
+                <!-- partial --><div class="main-panel">
+                <?php include($level.'content/partial_bill.php')?>
+                <!-- partial:../../partials/_footer.html -->
+                
+                <!-- main-panel ends -->
+            </div> 
+            
+            <!-- page-body-wrapper ends -->
+            </div>
+            <?php include($level.'partials/_footer.php')?>
+            <!-- container-scroller -->
+            <!-- plugins:js -->
+            <?php include($level.'js/plugin1.php')?>
+            <!-- endinject -->
+            <!-- Plugin js for this page -->
+            <!-- End plugin js for this page -->
+            <!-- inject:js -->
+            <?php include($level.'js/impact.php')?>
+            <!-- endinject -->
+            <!-- Custom js for this page -->
+            <!-- End custom js for this page -->
+        </body>
+    <?php
+    }
+    ?>
 </body>
 
 </html>

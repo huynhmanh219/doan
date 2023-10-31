@@ -1,5 +1,5 @@
 <?php
-    $level='../../';
+    $level='../';
     include($level.'DB/db.php');
     // var_dump($_POST);
     $edit_id=$_REQUEST['id'];
@@ -39,9 +39,9 @@
 
     var_dump($_FILES);
     move_uploaded_file($_FILES["fileimg"]["tmp_name"],
-        $level."upload_img_product/".$_FILES["fileimg"]["name"]);
+        $level."../upload_img_product/".$_FILES["fileimg"]["name"]);
 
     $rs -> execute();
 
-    header('location:../product/product.php');
+    header('location:../pages/product/product.php');
 ?>

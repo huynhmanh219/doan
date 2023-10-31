@@ -5,7 +5,7 @@
         $level='../../';
             include($level.'metadata/link.php');
             include($level.'DB/db.php');
-            include($level.'compoment/add_db.php');
+            include($level.'compoment/listProduct_data.php');
         ?>
     </head>
     <body>

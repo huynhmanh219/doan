@@ -1,5 +1,5 @@
 <?php
-  $level = "../../";
+  $level = "../";
   include($level.'DB/db.php');
 if(isset($_REQUEST['submit']))
 {

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <?php $level = "../../";
-  $page = 'blank';
+  $pages = 'blank';
   
   include($level.'layout.php')
   ?>

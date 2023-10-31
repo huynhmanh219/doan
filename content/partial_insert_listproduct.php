@@ -14,7 +14,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Add Catalog</h4>
                                 <p class="card-description"> Database</code></p>
-                                <form action="xuly_insert_listproduct.php" method="POST" enctype="multipart/form-data"> 
+                                <form action="<?php echo($level);?>compoment/insert_listproduct_process.php" method="POST" enctype="multipart/form-data"> 
                                     <table>
                                         </hr>
                                         <tr>

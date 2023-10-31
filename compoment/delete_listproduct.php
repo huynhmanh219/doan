@@ -1,5 +1,5 @@
 <?php
-    $level='../../';
+    $level='../';
     include($level.'DB/db.php');
     $status = '0';
     $catalogId=$_GET['sid'];
@@ -8,5 +8,5 @@
     $result = $db->prepare($sql_update_listproduct);
      $result->execute();
 
-    header("location:../product/listproduct.php");
+    header("location:../pages/product/listproduct.php");
 ?>

@@ -1,9 +1,9 @@
 <?php
-    $level='../../';
+    $level='../';
     include($level."DB/db.php");
 
     $imgpath = basename($_FILES['myfile']['name']);
-    $folder_path = "../../upload_img_product/";
+    $folder_path = $level."upload_img_product/";
     $file_path = $folder_path . $imgpath;
     move_uploaded_file($_FILES['myfile']['tmp_name'],$file_path);
     var_dump($file_path);

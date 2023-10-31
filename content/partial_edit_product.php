@@ -30,7 +30,7 @@ $edit = $result->fetch(PDO::FETCH_ASSOC);
                             <div class="card-body">
                                 <h4 class="card-title">Edit Product</h4>
                                 <p class="card-description"> Database</code></p>
-                                <form action="form_edit_product_process.php" method="POST" enctype="multipart/form-data"> 
+                                <form action="<?php echo($level);?>compoment/edit_product_process.php" method="POST" enctype="multipart/form-data"> 
                                     <input type="hidden" name  = "sid" value ="sid" >
                                     <table>
                                         <tr class="rowTable">
