@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <?php 
-    $pages = 'index';
+    $page = 'index';
     $level = '';?>
 
    <?php
-         include($LEVEL.'layout.php');
+         include($level.'layout.php');
    ?>
   </head>
 </html>
