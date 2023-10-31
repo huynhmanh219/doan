@@ -11,9 +11,9 @@
     
     $sid = $_REQUEST['sid'];
 
-    if($_FILES['fileimg']['name']==" ")
+    if($_FILES['fileimg']['name']=="")
     {
-        $edit_img = $_REQUEST['fileimg'];
+        $edit_img = $_FILES['fileimg']['name'];
     }
     else
     {

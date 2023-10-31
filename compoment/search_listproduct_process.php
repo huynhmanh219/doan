@@ -48,7 +48,7 @@
                         <td>'.$Cata['statu'].'</td>
                         <td>
                             <a href="delete_listproduct.php?sid='.$Cata['catalog_id'].'" ><i class="fas fa-trash" ></i></a>
-                            <a href="../pages/form/form_listproduct_edit.php?sid='.$Cata['catalog_id'].'"><i class="fas fa-edit"></i></a>
+                            <a href="../pages/form/form_listproduct_edit.php?cataID='.$Cata['catalog_id'].'"><i class="fas fa-edit"></i></a>
                         </td>
                     </tr>';
                                                 
