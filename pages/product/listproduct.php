@@ -2,7 +2,7 @@
 <html lang="en">
   <?php
     $level = '../../';
-    $pages = 'listproduct';
+    $page = 'listproduct';
     include($level.'DB/db.php');
     include($level.'compoment/listProduct_data.php');
     include($level.'layout.php');

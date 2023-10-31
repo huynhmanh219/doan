@@ -3,7 +3,7 @@
   <head>
     <?php 
       $level = '../../';
-      $pages = 'user';
+      $page = 'user';
       include($level.'DB/db.php');
       include($level.'compoment/user_data.php');
       include($level.'layout.php');

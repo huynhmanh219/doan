@@ -11,7 +11,7 @@
 
 <body>
     <!-- index-->
-    <?php if ($pages == 'index') 
+    <?php if ($page == 'index') 
     { ?>
         <!-- banner-->
         <div class="container-scroller">
@@ -48,7 +48,7 @@
     ?>
     
     <!-- chartjs-->
-    <?php if ($pages == 'chartjs') 
+    <?php if ($page == 'chartjs') 
     {
         ?>
         <div class="container-scroller">
@@ -88,7 +88,7 @@
     ?>
     
     <!--basic-->
-    <?php if ($pages == 'basic') 
+    <?php if ($page == 'basic') 
     { ?>
         <div class="container-scroller">
             <!-- partial:../../partials/_navbar.php -->
@@ -120,7 +120,7 @@
     } ?>
     
     <!--mdi-->
-    <?php if ($pages == 'mdi') 
+    <?php if ($page == 'mdi') 
     {
             ?>
             <div class=" container-scroller">
@@ -154,7 +154,7 @@
     ?>
     
     <!--blank-->
-    <?php if ($pages == 'blank') {
+    <?php if ($page == 'blank') {
             ?>
             <div class="container-scroller">
                 <!-- partial:../../partials/_navbar.html -->
@@ -192,7 +192,7 @@
     ?>
 
     <!--error 404 -->
-    <?php if($pages == '404')
+    <?php if($page == '404')
     {?>
     <div class="container-scroller">
       <?php include($level.'content/partial_404.php')?>
@@ -212,7 +212,7 @@
     ?>
 
     <!-- error 500 -->
-    <?php if($pages == '500')
+    <?php if($page == '500')
     {?>
     <div class="container-scroller">
     <?php include($level.'content/partial_500.php')?>
@@ -232,7 +232,7 @@
     ?>
 
     <!--login-->
-    <?php if($pages == 'login')
+    <?php if($page == 'login')
     {?>
        <div class="container-scroller">
      <?php include($level.'content/partial_login.php')?>
@@ -252,7 +252,7 @@
     ?>
 
     <!--register-->
-    <?php if($pages == 'register')
+    <?php if($page == 'register')
     {?>
     <div class="container-scroller">
      <?php include($level.'content/partial_register.php')?>
@@ -272,7 +272,7 @@
     ?>
 
     <!-- Listproduct -->
-    <?php if($pages == 'listproduct')
+    <?php if($page == 'listproduct')
     {?>
         <body>
             <div class="container-scroller">
@@ -304,7 +304,7 @@
     }
     ?>
     <!-- product -->
-    <?php if($pages == 'product')
+    <?php if($page == 'product')
     {?>
         <body>
             <div class="container-scroller">
@@ -342,7 +342,7 @@
     ?>
 
     <!-- user -->
-    <?php if($pages == 'user')
+    <?php if($page == 'user')
     {?>
         <body>
             <div class="container-scroller">
@@ -380,7 +380,7 @@
     ?>
 
     <!-- Bill -->
-    <?php if($pages == 'bill')
+    <?php if($page == 'bill')
     {?>
         <body>
             <div class="container-scroller">

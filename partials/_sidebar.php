@@ -80,7 +80,7 @@
       </a>
       <div class="collapse" id="general-pages">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/blank-page.php"> Blank Page </a></li>
+          <!-- <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.php"> Blank Page </a></li> -->
           <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/login.php"> Login </a></li>
           <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/register.php"> Register </a></li>
           <li class="nav-item"> <a class="nav-link" href="<?php echo $level?>pages/samples/error-404.php"> 404 </a></li>
