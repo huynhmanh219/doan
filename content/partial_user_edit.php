@@ -23,7 +23,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
                 <input type="hidden" name  = "suser" value ="suser" >
              <div class = "form-label">  
                 <label for="user">
-                User:<input type="text" name ="user" id= "user"  value = "<?php echo( $row['users'])?>">
+                User:<input type="text" readonly name ="user" id= "user"  value = "<?php echo( $row['users'])?>">
                 </label>
                 <label for="fname">  
                 FirstName: <input type ="text" name ="fname" id ="fname" value ="<?php echo($row['firstname'])?>">

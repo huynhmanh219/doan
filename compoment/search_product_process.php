@@ -9,7 +9,7 @@
             echo "Yeu cau nhap du lieu vao o trong";
         }
         else {
-        $sql = "SELECT* from product where names like '%$search%'";
+        $sql = "SELECT* from product where names like '%$search%' or id like '%$search%' or catalog_id like '%$search%'";
         $result = $db->prepare($sql);
         $result->execute();
             $row = $result->fetchALL();

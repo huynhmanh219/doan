@@ -38,7 +38,7 @@
                             }
                             if($user['statu']=='0')
                             {
-                              $user['statu'] = 'disable';
+                              $user['statu'] = 'Deative';
                               $color = 'text-danger';
                             }
                             echo' 

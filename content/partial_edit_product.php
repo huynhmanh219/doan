@@ -35,7 +35,7 @@ $edit = $result->fetch(PDO::FETCH_ASSOC);
                                     <table>
                                         <tr class="rowTable">
                                             <td class="tdLabel"><label class="label">Id:</label></td>
-                                            <td class="row"><input type="text" name="id" value="<?php echo $edit['id']?>" style="padding:3px 1px 3px; border:1px solid black;"/></td>
+                                            <td class="row"><input type="text" readonly name="id" value="<?php echo $edit['id']?>" style="padding:3px 1px 3px; border:1px solid black;"/></td>
                                         </tr>
                                         </hr>
                                         <tr>

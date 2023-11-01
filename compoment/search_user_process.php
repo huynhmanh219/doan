@@ -8,7 +8,7 @@ if(isset($_REQUEST['submit']))
         echo "Yeu cau nhap du lieu vao o trong";
     }
      else {
-       $sql = "SELECT* from user where firstname like '%$search%'";
+       $sql = "SELECT* from user where firstname like '%$search%' or lastname like '%$search%' or users like '%$search%'";
        $result = $db->prepare($sql);
        $result->execute();
         $r = $result->fetchALL();

@@ -1,5 +1,5 @@
  <form action="<?php echo($level);?>compoment/search_bill_process.php" method="get">
-            <input type="text" name = "search">
+            <input type="text" name = "search" class="border-dark">
             <input type = "submit" name = "submit" value = "search">
          </form><div class="col-lg-12 grid-margin stretch-card">
   

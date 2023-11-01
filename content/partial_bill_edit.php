@@ -22,7 +22,7 @@ $row = $result->fetch(PDO::FETCH_ASSOC);
             <input type="hidden" name  = "smahd" value ="smahd" ?>
              <div class = "form-label">  
                 <label for="bill">
-                Bill:<input type="text" name ="bill" id= "bill" value = "<?php echo($row['mahd'])?>">
+                Bill:<input type="text" name ="bill" id= "bill" value = "<?php echo($row['mahd'])?>"readonly>
                 </label>
                 <label for="fname">  
                 Date: <input type ="date" name ="date" id ="fname" value ="<?php echo($row['ngay'])?>">

@@ -37,7 +37,7 @@ $editCatalog = $result->fetch(PDO::FETCH_ASSOC);
                                         </hr>
                                         <tr>
                                             <td class="tdLabel"><label >Catalog_id:</label></td>
-                                            <td class="row"><input type="text" name="catagoryID" value="<?php echo $editCatalog['catalog_id']?>" style="padding:3px 0 3px; border:1px solid black;">
+                                            <td class="row"><input type="text" readonly name="catagoryID" value="<?php echo $editCatalog['catalog_id']?>" style="padding:3px 0 3px; border:1px solid black;">
                                                 </td>
                                         </tr>
                                         <tr>

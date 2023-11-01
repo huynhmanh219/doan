@@ -20,8 +20,8 @@
                             <thead>
                                 <tr>
                                     <th><input type="checkbox"></th>
-                                    <th> Catalog_id </th>
-                                    <th> Catalog_name </th>
+                                    <th> Id </th>
+                                    <th> Name </th>
                                     <th>Status</th>
                                     <th>Function</th>
                                 </tr>
