@@ -3,13 +3,13 @@ $level = "../../";
 $id = $_GET['sid'];
 include($level."DB/db.php");
 
-$edit_product = "SELECT * from product where id = '$id'";
-
-
+$edit_product = "SELECT * FROM product WHERE id = :id";
 $result = $db->prepare($edit_product);
-$result -> execute();
+$result->bindValue(':id', $id, PDO::PARAM_INT);
+$result->execute();
 
 $edit = $result->fetch(PDO::FETCH_ASSOC);
+
 
 ?>
 <style>
@@ -32,46 +32,67 @@ $edit = $result->fetch(PDO::FETCH_ASSOC);
                                 <p class="card-description"> Database</code></p>
                                 <form action="<?php echo($level);?>compoment/edit_product_process.php" method="POST" enctype="multipart/form-data"> 
                                     <input type="hidden" name  = "sid" value ="sid" >
-                                    <table>
-                                        <tr class="rowTable">
-                                            <td class="tdLabel"><label class="label">Id:</label></td>
-                                            <td class="row"><input type="text" readonly name="id" value="<?php echo $edit['id']?>" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        </hr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Catalog_id:</label></td>
-                                            <td class="row"><input type="text" name="catagoryID" value="<?php echo $edit['catalog_id']?>" style="padding:3px 0 3px; border:1px solid black;">
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label  class="label">Name:</label></td>
-                                            <td class="row"><input type="text" name="name" value="<?php echo $edit['names']?>" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Price:</label></td>
-                                            <td class="row"><input type="text" name="prices" value="<?php echo $edit['price']?>"  style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Created:</label></td>
-                                            <td class="row"><input type="date" name="created" value="<?php echo $edit['created']?>"  style="width:120px; padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Status:</label></td>
-                                            <td class="row"><input type="text" name="status" value="<?php echo $edit['statu']?>" style="width:120px; padding:3px 1px 3px; border:1px solid black;" placeholder="1 or 0">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Image:</label></td>
-                                            <td class="row"><input type="file" name="fileimg" value="<?php echo ($level."upload_img_product/". ($edit['image_link']))?>"  style="padding:3px 1px 3px; border:1px solid black;"/>
-                                            <img src="<?php echo $level."upload_img_product/".($edit['image_link'])?>" name="imgEdit" style="width:200px;"></td>
-                                        </tr>
-                                        <tr>
-                                        <td >
-                                            <div ><input type="submit"  value="Save" />
-                                            </div>
-                                        </td>
-                                        </tr>
-                                    </table>
+                                
+                                    <div class="form-group">
+                                        <label for="exampleInputID">ID</label>
+                                        <input type="text" readonly name="" class="form-control" value="SP<?php echo $edit['id']?>" id="exampleInputID" >
+                                        <input type="text" readonly name="id" class="form-control" value="<?php echo $edit['id']?>" id="exampleInputID" hidden="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">Name</label>
+                                        <input type="text" name="name" class="form-control" id="exampleInputName1" value="<?php echo $edit['names']?>">
+                                    </div>
+                                    <div class="form-group">
+                                        <label  >Catalog_id</label>
+                                        <select class="form-control" style="padding:15px;" name="catagoryID" >
+                                           
+                                            <?php
+                                            foreach($dslistproduct as $list)
+                                            {
+                                                $selected = ($list['catalog_id'] == $edit['Catalog_id']) ? 'selected' : '';
+                                                echo '<option value="' . $list['catalog_id'] . '" ' . $selected . '> ML' . $list['catalog_id'] . '</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPrice">Price</label>
+                                        <input type="text" name="prices" class="form-control" id="exampleInputPrice" value="<?php echo $edit['price']?>">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleSelectStatus" >Status</label>
+                                        <select class="form-control" name="status" id="exampleSelectStatus" style="padding:15px;" >
+                                        <?php
+                                            
+                                            if($edit['statu'] == 0)
+                                            {
+                                                $edit['statu']='Disable';
+                                                echo'
+                                                    
+                                                    <option  value=" '.$edit['statu'].'">'.$edit['statu'].'</option>
+                                                    <option  value="1">Active</option>';
+                                            }
+                                                
+                                            else 
+                                            { 
+                                                $edit['statu']='Active';
+                                                echo'
+                                                    <option  value=" '.$edit['statu'].'">'.$edit['statu'].'</option>
+                                                    <option  value="0">Disable</option>';
+                                            }
+                                            
+                                        ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>File upload</label> </br>
+                                        <input type="file" name="fileimg" value="<?php echo ($level."upload_img_product/". ($edit['image_link']))?>"></br>
+                                        <input type="file" name="anhcu" value="<?php echo ($level."upload_img_product/". ($edit['image_link']))?>" hidden="true"></br>
+                                        <img src="<?php echo $level."upload_img_product/".($edit['image_link'])?>" name="imgEdit" style="width:200px;margin-top:5px;"></td>
+                                    </div>
+                                    <input type="submit" class="btn btn-gradient-primary me-2"  value="Save" />
+                                    
                                 </form>
                             </div>
                         </div>

@@ -49,10 +49,10 @@
                         <label for="exampleInputCity1">status</label>
                         <input type="text" class="form-control" name ="status" id="exampleInputCity1" placeholder="Status"value = "<?php echo( $row['status'])?>">
                       </div>
-                      <div class="form-group">
+                      <!-- <div class="form-group">
                         <label for="exampleInputity1">Role</label>
                         <input type="text" class="form-control" name ="role" id="exampleInputity1" placeholder="role"value = "<?php echo( $row['role'])?>">
-                      </div>
+                      </div> -->
                       <input type="submit" name="submit" class="btn btn-gradient-primary me-2">
                     </form> 
                   </div>

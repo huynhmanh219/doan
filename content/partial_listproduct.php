@@ -44,7 +44,7 @@
                                     echo '
                                         <tr class="table">
                                         <td><input type="checkbox"></td>
-                                            <td> '.$list['catalog_id'].' </td>
+                                            <td> ML'.$list['catalog_id'].' </td>
                                             <td> '.$list['catalog_name'].' </td>
                                             <td ><p class="'.$color.'"> '.$list['statu'].'</p></td>
                                             <td>

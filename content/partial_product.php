@@ -32,7 +32,6 @@
                                     <th>name</th>
                                     <th>price</th>
                                     <th>image</th>
-                                    <th>created</th>
                                     <th>status</th>
                                     <th>function</th>
                                   </tr>
@@ -44,23 +43,22 @@
                                   $color='';
                                   if($sanpham['statu']== '1')
                                   {
-                                    $sanpham['statu']  = 'in stock';
+                                    $sanpham['statu']  = 'Active';
                                     $color= 'text-success';
                                   }
                                   if($sanpham['statu']=='0')
                                   {
-                                    $sanpham['statu'] = 'sold out';
+                                    $sanpham['statu'] = 'Disable';
                                     $color = 'text-danger';
                                   }
                                     echo '
                                         <tr class="table">
                                           <td><input type="checkbox"></td>
-                                          <td> '.$sanpham['id'].'</td>
-                                          <td> '.$sanpham['catalog_id'].'</td>
+                                          <td>SP'.$sanpham['id'].'</td>
+                                          <td> ML'.$sanpham['Catalog_id'].'</td>
                                           <td> '.$sanpham['names'].'</td>
                                           <td> '.$sanpham['price'].'</td>
                                           <td><img src="'.$level.'upload_img_product/'.$sanpham['image_link'].'" alt=""></td>
-                                          <td> '.$sanpham['created'].'</td>
                                           <td ><p class="'.$color.'"> '.$sanpham['statu'].'</p></td>
                                           <td>
                                             <a href="'.$level.'compoment/delete_product.php?sid='.$sanpham['id'].'" class="text-danger"><i class="fas fa-trash"></i></a>

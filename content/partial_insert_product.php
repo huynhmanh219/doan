@@ -17,45 +17,44 @@
                                 <h4 class="card-title">Add Product</h4>
                                 <p class="card-description"> Database</code></p>
                                 <form action="<?php echo($level);?>compoment/insert_product_process.php" method="POST" enctype="multipart/form-data"> 
-                                    <table>
-                                        <tr class="rowTable">
-                                            <td class="tdLabel"><label class="label">Id:</label></td>
-                                            <td class="row"><input type="text" name="id" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        </hr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Catalog_id:</label></td>
-                                            <td class="row"><input type="text" name="catalog_id" style="padding:3px 0 3px; border:1px solid black;">
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label  class="label">Name:</label></td>
-                                            <td class="row"><input type="text" name="name" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Price:</label></td>
-                                            <td class="row"><input type="text" name="price"  style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Image:</label></td>
-                                            <td class="row"><input type="file" name="myfile"  style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Created:</label></td>
-                                            <td class="row"><input type="date" name="created"  style="width:120px; padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Status:</label></td>
-                                            <td class="row"><input type="text" name="status" style="width:120px; padding:3px 1px 3px; border:1px solid black;" placeholder="1 or 0">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                        <td >
-                                            <div ><input type="submit"  value="ADD" />
-                                            </div>
-                                        </td>
-                                        </tr>
-                                    </table>
+                                    <div class="form-group">
+                                        <label for="exampleInputName1">Name</label>
+                                        <input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleSelectCatalog_id" >Catalog_id</label>
+                                        <select class="form-control" style="padding:15px;" name="catalog_id" id="exampleSelectCatalog_id" class="form-select">
+                                        <?php
+                                        foreach($dslistproduct as $list)
+                                        {
+                                            echo'<option value="'.$list['catalog_id'].'">ML'.$list['catalog_id'].'</option>';
+                                        }
+                                        ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPrice">Price</label>
+                                        <input type="text" name="price" class="form-control" id="exampleInputPrice" placeholder="Price">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleSelectStatus" >Status</label>
+                                        <select class="form-control" name="status" id="exampleSelectStatus" style="padding:15px;">
+                                        <option value="1">Active</option>
+                                        <option value="0">Disable</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>File upload</label> </br>
+                                        <input type="file" name="myfile" >
+                                        <!-- <div class="input-group col-xs-12">
+                                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                                        <span class="input-group-append">
+                                            <input class=" btn btn-gradient-primary" type="submit" value="Upload">
+                                        </span>
+                                        </div> -->
+                                    </div>
+                                    <input type="submit" class="btn btn-gradient-primary me-2"  value="ADD" />
+                                    
                                 </form>
                             </div>
                         </div>

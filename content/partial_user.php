@@ -25,7 +25,7 @@
                           <th> Password </th>
                           <th> create </th>
                           <th> Status </th>
-                          <th> Role </th>
+                          
                           <th> Operation </th>
                         </tr>
                       </thead>
@@ -55,7 +55,7 @@
                                 <td> '.$user['password'].' </td>
                                 <td> '.$user['create_at'].' </td>
                                 <td ><p class="'.$color.'"> '.$user['status']. '</p></td>
-                                <td> '.$user['role'].' </td>
+                               
                                 <td style ="text-align: center"><a " href="../form/form_user_edit_.php?sid='.$user['id'].'" class = "btn btn-primary ">Edit</a>
                                 <a  href="'.$level.'compoment/delete_user_process.php?sid='.$user['id'].'"class = "btn btn-danger" >Delete</a>   </td>
                             </tr> ';?>

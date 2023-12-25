@@ -1,5 +1,5 @@
 <?php
-$sql = "select* from order";
+$sql = "select* from bill";
 $result = $db->prepare($sql);
 $result->execute();
 $dsbill= $result->fetchAll();
