@@ -1,43 +1,50 @@
-<?php
-$level = "../../";
-include($level.'DB/db.php');
-include($level.'compoment/add_db.php')
-?>
+
 <html>
 
 <head>
-    <link rel="stylesheet" href="form.css">
-    <?php $level='../../'?>
 </head>
 <body>
-    
-    <h1>Add Account User</h1>
-        <div class = "form-insert">
-<<<<<<< Updated upstream:content/partial_user_add.php
-            <form action="<?php echo($level);?>compoment/insert_user_process.php" method="POST" enctype="multipart/form-data">
-=======
-           
-        <form action="form_user_insert.php" method="POST" enctype = "mutilpart/form-data">
->>>>>>> Stashed changes:pages/form/form.php
-             <div class = "form-label">  
-                <label for="user">
-                User:<input type="text" name ="user" id= "user">
-                </label>
-                <label for="fname">  
-                FirstName: <input type ="text" name ="fname" id ="fname">
-                </label>  
-                <label for="lname">
-                LastName:<input type ="text" name ="lname">
-                </label> 
-                <label for="status">
-                Status:<input type ="text" name ="status">
-                </label> 
-                 <label>
-                Image:<input type ="file" name= "image" id ="file">
-                </label> 
-                <input type="submit" VALUE = "THÊM" ID = "submit">
-                </div> 
-            </form>
-        </div>
+    <div class="card-body">
+                    <h4 class="card-title">User Update</h4>
+                    <p class="card-description"> Basic form elements </p>
+                    <form  class="forms-sample " action="<?php echo $level?>compoment/insert_user_process.php" method="POST" enctype = "multipart/form-data">
+                      <div class="form-group">
+                        <label for="exampleInputName1">User</label>
+                        <input type="text" class="form-control" name = "user" id="exampleInputName1" placeholder="User">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail3">Full Name</label>
+                        <input type="text" class="form-control" name = "fullname" id="exampleInputEmail3" placeholder="Full Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInput">Email</label>
+                        <input type="email" name = "email" class="form-control" id="exampleInput" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label>Image upload</label> 
+                       <!-- <div class="input-group col-xs-12">-->
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                          <input type="file" name ="image" class=" btn btn-gradient-primary">
+                        <!--</div>-->
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword4">Password</label>
+                         <input type="password" name = "password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputCity1">Create_at</label>
+                        <input type="date" class="form-control" name ="create" id="exampleInputCity1" placeholder="create_at">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputCity1">status</label>
+                        <input type="text" class="form-control" name ="status" id="exampleInputCity1" placeholder="Status">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputity1">Role</label>
+                        <input type="text" class="form-control" name ="role" id="exampleInputity1" placeholder="role">
+                      </div>
+                      <input type="submit" name="submit" class="btn btn-gradient-primary me-2">
+                    </form> 
+                  </div>
 </body>
 </html>

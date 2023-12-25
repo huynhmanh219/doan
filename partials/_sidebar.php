@@ -3,7 +3,7 @@
     <li class="nav-item nav-profile">
       <a href="#" class="nav-link">
         <div class="nav-profile-image">
-          <img src="<?php echo $level?>assets/images/faces/face1.jpg" alt="profile">
+          <img src="<?php echo $level?>img-user/hinh1.jpg" alt="profile">
           <span class="login-status online"></span>
           <!--change to offline or busy as needed-->
         </div>
@@ -46,12 +46,12 @@
         <i class="mdi mdi-contacts menu-icon"></i>
       </a>
     </li>
-    <!-- <li class="nav-item">
+     <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/forms/basic_elements.php">
         <span class="menu-title">Forms</span>
         <i class="mdi mdi-format-list-bulleted menu-icon"></i>
       </a>
-    </li> -->
+    </li> 
     <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/charts/chartjs.php">
         <span class="menu-title">Charts</span>

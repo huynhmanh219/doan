@@ -3,49 +3,47 @@ $level = "../";
 var_dump($_POST);
 include($level.'DB/db.php');
 
-$im = basename($_FILES['image']['name']);
 
-
-move_uploaded_file()
-
-
+$id = $_POST['id'];
 $up_user = $_POST['user'];
-$up_fname = $_POST['fname'];
-$up_lname = $_POST['lname'];
+$up_fname = $_POST['fullname'];
+$up_email = $_POST['email'];
 $up_status = $_POST['status'];
-
-
-
-if($_FILES['image']['name'] == "")
+$img =$_FILES['image']['name'];
+if(($_FILES['image']['name'])== "")
 {
-    $img = $_POST['image'];
+    
+    $img = $_POST['img'];
 }
 else{
     $img = $_FILES['image']["name"];
 }
+$up_password = $_POST['password'];
+$up_create = $_POST['create'];
+$up_role = $_POST['role'];
 
 
-
-
-$update_sql = "UPDATE user SET firstname = :fname,
-lastname =:lname,
-statu = :statu,
-picture = :pic
- where users = '$up_user'";
-
+$update_sql = "UPDATE user SET fullname = :fname,
+email =:email,
+status = :status,
+picture = :pic,
+password = :pass,
+create_at = :create,
+role = :role WHERE id = '$id' ";
 
 $result = $db->prepare($update_sql);
 
 $result -> bindValue(':fname',$up_fname,PDO::PARAM_STR);
-$result -> bindValue(':lname',$up_lname,PDO::PARAM_STR);
-$result -> bindValue(':statu',$up_status,PDO::PARAM_INT);
+$result -> bindValue(':email',$up_email,PDO::PARAM_STR);
+$result -> bindValue(':status',$up_status,PDO::PARAM_INT);
 $result -> bindValue(':pic',$img,PDO::PARAM_STR);
-
+$result -> bindValue(':pass',$up_password,PDO::PARAM_STR);
+$result -> bindValue(':create',$up_create,PDO::PARAM_STR);
+$result -> bindValue(':role',$up_role,PDO::PARAM_INT);
 
 var_dump($_FILES);
 move_uploaded_file($_FILES["image"]["tmp_name"],
 $level."img-user/".$_FILES["image"]["name"]);
-
 $result -> execute();
 
 header('location:../pages/user/user.php');

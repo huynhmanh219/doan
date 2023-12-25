@@ -1,10 +1,9 @@
 <?php
 $level = "../";
-$status = '0';
-$user = $_GET['suser'];
+$user = $_GET['sid'];
 include($level.'DB/db.php');
 
-$sql_update_user = "UPDATE user SET statu = '0' where users ='$user'";
+$sql_update_user = "UPDATE user SET status = '0' where id ='$user'";
 $rs = $db->prepare($sql_update_user);
 $rs ->execute();
 
