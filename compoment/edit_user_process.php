@@ -3,7 +3,10 @@ $level = "../";
 var_dump($_POST);
 include($level.'DB/db.php');
 
+$im = basename($_FILES['image']['name']);
 
+
+move_uploaded_file()
 
 
 $up_user = $_POST['user'];
