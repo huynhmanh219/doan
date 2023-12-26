@@ -37,7 +37,7 @@
                 }
                 if($Cata['statu']=='0')
                 {
-                    $Cata['statu'] = 'Disable';
+                    $Cata['statu'] = 'Hidden';
                     $color = 'text-danger';
                 }
                 echo '

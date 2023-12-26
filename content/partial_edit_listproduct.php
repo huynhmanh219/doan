@@ -32,34 +32,47 @@ $editCatalog = $result->fetch(PDO::FETCH_ASSOC);
                                 <p class="card-description"> Database</code></p>
                                 <form action="<?php echo($level);?>compoment/edit_listproduct_process.php" method="POST" enctype="multipart/form-data"> 
                                     <input type="hidden" name  = "scatalogID" value ="scatalogID" >
-                                    <table>
-                                        
-                                        </hr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Catalog_id:</label></td>
-                                            <td class="row"><input type="text" readonly name="catagoryID" value="<?php echo $editCatalog['catalog_id']?>" style="padding:3px 0 3px; border:1px solid black;">
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label  class="label">Name:</label></td>
-                                            <td class="row"><input type="text" name="name" value="<?php echo $editCatalog['catalog_name']?>" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Status:</label></td>
-                                            <td class="row"><input type="text" name="status" value="<?php echo $editCatalog['statu']?>" style="width:120px; padding:3px 1px 3px; border:1px solid black;" placeholder="1 or 0">
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                        <td >
-                                            <div ><input type="submit"  value="Save" />
-                                            </div>
-                                        </td>
-                                        </tr>
+                                    <table>     
+                                        <div class="form-group">
+                                        <label for="exampleInputID">Catalog_ID:</label>
+                                            <input type="text" readonly name="" class="form-control" value="ML<?php echo $editCatalog['catalog_id']?>" id="exampleInputID" >
+                                            <input type="text" readonly name="catagoryID" class="form-control" value="<?php echo $editCatalog['catalog_id']?>" id="exampleInputID" hidden="true">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputName1">Name:</label>
+                                            <input type="text" name="name" class="form-control" id="exampleInputName1" value="<?php echo $editCatalog['catalog_name']?>">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleSelectStatus" >Status:</label>
+                                            <select class="form-control" name="status" id="exampleSelectStatus" style="padding:15px;" >
+                                                <?php
+                                                    if($editCatalog['statu'] == 0)
+                                                    {
+                                                        $editCatalog['statu']='Hidden';
+                                                        echo'
+                                                            
+                                                            <option  value=" '.$editCatalog['statu'].'">'.$editCatalog['statu'].'</option>
+                                                            <option  value="1">Active</option>';
+                                                    }
+                                                        
+                                                    else 
+                                                    { 
+                                                        $editCatalog['statu']='Active';
+                                                        echo'
+                                                            <option  value=" '.$editCatalog['statu'].'">'.$editCatalog['statu'].'</option>
+                                                            <option  value="0">Hidden</option>';
+                                                    }
+                                                    
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <input type="submit" class="btn btn-gradient-primary me-2"  value="Save" />
                                     </table>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>    
-            </div>
+</div>

@@ -17,7 +17,8 @@
         if($row > 0 && $search!= "")
         {    
             
-             echo '<table border="1" cellspacing="0" cellpadding="10" style="text-align:center" align="center" >
+             echo '
+             <table border="1" cellspacing="0" cellpadding="10" style="text-align:center" align="center" >
                 <h2 style="text-align:center">List of Product</h2>
                     <tr>
                         <th><input type="checkbox"></th>
@@ -26,7 +27,6 @@
                         <th>name</th>
                         <th>price</th>
                         <th>image</th>
-                        <th>created</th>
                         <th>status</th>
                         <th>function</th>
                     </tr>
@@ -36,23 +36,22 @@
                 $color='';
                 if($ketqua['statu']== '1')
                 {
-                    $ketqua['statu']  = 'in stock';
+                    $ketqua['statu']  = 'active';
                     $color= 'text-success';
                 }
                 if($ketqua['statu']=='0')
                 {
-                    $ketqua['statu'] = 'sold out';
+                    $ketqua['statu'] = 'hidden';
                     $color = 'text-danger';
                 }
                 echo '
                     <tr>
                         <td><input type="checkbox"/></td>
-                        <td>'.$ketqua['id'].'</td>
-                        <td>'.$ketqua['catalog_id'].'</td>
+                        <td>SP'.$ketqua['id'].'</td>
+                        <td>ML'.$ketqua['Catalog_id'].'</td>
                         <td>'.$ketqua['names'].'</td>
                         <td>'.$ketqua['price'].'</td>
                         <td><img src="'.$level.'upload_img_product/'.$ketqua['image_link'].'" style="width:80px"/></td>
-                        <td>'.$ketqua['created'].'</td>
                         <td class="'.$color.'">'.$ketqua['statu'].'</td>
                         <td>
                             <a href="delete_product.php?sid='.$ketqua['id'].'" ><i class="fas fa-trash" ></i></a>

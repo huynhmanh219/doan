@@ -38,7 +38,7 @@
                                     }
                                     if($list['statu']=='0')
                                     {
-                                        $list['statu'] = 'Disable';
+                                        $list['statu'] = 'Hidden';
                                         $color = 'text-danger';
                                     }
                                     echo '

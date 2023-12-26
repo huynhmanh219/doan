@@ -40,7 +40,7 @@
                                         <label for="exampleSelectStatus" >Status</label>
                                         <select class="form-control" name="status" id="exampleSelectStatus" style="padding:15px;">
                                         <option value="1">Active</option>
-                                        <option value="0">Disable</option>
+                                        <option value="0">Hidden</option>
                                         </select>
                                     </div>
                                     <div class="form-group">

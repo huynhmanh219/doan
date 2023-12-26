@@ -46,12 +46,7 @@
         <i class="mdi mdi-contacts menu-icon"></i>
       </a>
     </li>
-     <li class="nav-item">
-      <a class="nav-link" href="<?php echo $level?>pages/forms/basic_elements.php">
-        <span class="menu-title">Forms</span>
-        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-      </a>
-    </li> 
+     
     <li class="nav-item">
       <a class="nav-link" href="<?php echo $level?>pages/charts/chartjs.php">
         <span class="menu-title">Charts</span>
@@ -93,7 +88,8 @@
         <div class="border-bottom">
           <h6 class="font-weight-normal mb-3">Projects</h6>
         </div>
-        <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+Hóa Đơn</button>
+        <a href="#" class="btn btn-block btn-lg btn-gradient-primary mt-4">Load</a>
+        <button class="btn btn-block btn-lg btn-gradient-primary mt-4" hidden>Home</button>
         <div class="mt-4">
           <div class="border-bottom">
             <p class="text-secondary">Categories</p>

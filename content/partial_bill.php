@@ -1,13 +1,18 @@
- <form action="<?php echo($level);?>compoment/search_bill_process.php" method="get">
-            <input type="text" name = "search" class="border-dark">
-            <input type = "submit" name = "submit" value = "search">
-         </form><div class="col-lg-12 grid-margin stretch-card">
-  
+  <div class="content-wrapper">
+        <div class="page-header">
+          <h3 class="page-title"> Bill Table </h3>
+        </div>
+        <div class="row"> 
+              <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Bill</h4>
-                    <p class="card-description"> Add class <code>.table-bordered</code>
-                    </p>
+                    <h4 class="card-title">SEARCH</h4>
+                    <div style="justify-content:space-between;display:flex;">
+                      <form action="<?php echo($level);?>compoment/search_bill_process.php" method="get">
+                        <input type="text" name = "search" class="border-dark">
+                        <input type = "submit" name = "submit" value = "search">
+                      </form>
+                    </div>
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -52,3 +57,5 @@
                   </div>
                 </div>
               </div>
+          </div>
+  </div>

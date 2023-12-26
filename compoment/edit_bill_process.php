@@ -2,10 +2,10 @@
 $level = "../";
 
 include $level."DB/db.php";
-$mahd = $_POST['bill'];
+$mahd = $_POST['id'];
 $date = $_POST['date'];
-$pttt = $_POST['pttt'];
-$price = $_POST['price'];
+$pttt = $_POST['pay'];
+$price = $_POST['money'];
 $status = $_POST['status'];
 
 

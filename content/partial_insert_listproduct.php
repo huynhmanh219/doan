@@ -17,26 +17,19 @@
                                 <form action="<?php echo($level);?>compoment/insert_listproduct_process.php" method="POST" enctype="multipart/form-data"> 
                                     <table>
                                         </hr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Catalog_id:</label></td>
-                                            <td class="row"><input type="text" name="catalog_id" style="padding:3px 0 3px; border:1px solid black;">
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label  class="label">Catalog_Name:</label></td>
-                                            <td class="row"><input type="text" name="catalog_name" style="padding:3px 1px 3px; border:1px solid black;"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tdLabel"><label >Status:</label></td>
-                                            <td class="row"><input type="text" name="status" style="width:120px; padding:3px 1px 3px; border:1px solid black;" placeholder="1 or 0">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                        <td >
-                                            <div ><input type="submit"  value="ADD" />
-                                            </div>
-                                        </td>
-                                        </tr>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1">Catalog_Name</label>
+                                            <input type="text" name="catalog_name" class="form-control" id="exampleInputName1" placeholder="Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleSelectStatus" >Status</label>
+                                            <select class="form-control" name="status" id="exampleSelectStatus" style="padding:15px;">
+                                                <option value="1">Active</option>
+                                                <option value="0">Hidden</option>
+                                            </select>
+                                        </div>
+                                       
+                                        <input type="submit" class="btn btn-gradient-primary me-2"  value="ADD" />
                                     </table>
                                 </form>
                             </div>

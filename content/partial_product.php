@@ -1,14 +1,6 @@
-
-
 <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title"> Product Table </h3>
-              <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="<?php echo ($level);?>pages/insert/form_insert_product.php">Add Product</a></li>
-                   <li class="breadcrumb-item active" aria-current="page">Basic tables</li> 
-                </ol>
-              </nav> -->
             </div>
             <div class="row">
                 <div class="col-lg-12 stretch-card">
@@ -21,6 +13,7 @@
                                 <input type="text" name="Searchproduct" placeholder="product name" class="border-dark">
                                 <input type="submit" value="Search" name="submitSearch">
                               </form>
+
                               <a href="../form/form_product_insert.php" style="text-decoration:none;" class="btn btn-primary p-2 m-2">Add Product</a>
                             </div>
                             <table class="table table-bordered">
@@ -48,7 +41,7 @@
                                   }
                                   if($sanpham['statu']=='0')
                                   {
-                                    $sanpham['statu'] = 'Disable';
+                                    $sanpham['statu'] = 'Hidden';
                                     $color = 'text-danger';
                                   }
                                     echo '
